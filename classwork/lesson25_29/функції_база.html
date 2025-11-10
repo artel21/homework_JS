@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function writer(productTitle,price,description) {
+            document.write(`
+                <div>
+                    <h2>${productTitle}, ${price} </h2>
+                    <p>${description}</p>
+                </div>`
+            );
+        }
+
+writer('milk',45,'молоко Простонаше')
+writer('tea',55,'чай Батік')
+writer('oil',70,'олія рафінована Олейна')
+writer('sugar',39,'цукор рафінований')
+</script>
+
+<script>
+    function writer(productTitle,price,description) {
+        console.log(productTitle, price, description);
+    }
+    writer('milk',45,'молоко Простонаше')
+    writer('tea',55,'чай Батік')
+    writer('oil',70,'олія рафінована Олейна')
+    writer('sugar',39,'цукор рафінований')
+</script>
+
+<script>
+    function printerArray(array) {
+        for (let item of array) {
+            console.log(item);
+        }
+    }
+    let oldArray =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    let newArray=[`a,b,c,d,e`]
+
+    printerArray(newArray)
+    printerArray(oldArray)
+</script>
+
+</body>
+</html>
