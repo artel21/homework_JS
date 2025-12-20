@@ -1,0 +1,27 @@
+.wrap{
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin-bottom: 20px;
+}
+
+.collapse{
+    width: 200px;
+    height: 200px;
+    background: green;
+    margin-bottom: 20px;
+}
+
+.alpha{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin-bottom: 20px;
+}
+
+.beta{
+    width: 200px;
+    height: 200px;
+    background: darkblue;
+    margin-bottom: 20px;
+}
