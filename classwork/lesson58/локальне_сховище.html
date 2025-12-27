@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //Локальне сховище - це область у браузері, яка відводиться під інформацію конкретного сайту і переносить в собі все, що пов'язано завантаженням/перезавантаженням сторінки
+
+    //додаємо інф в localstorage
+    localStorage.setItem('title', 'open');
+    //йдемо в ДевТулз/вкладка application // додасть ключ title і значення open
+
+    //*якщо ми видаляємо localStorage - ключ і значення всеодно залишаються
+
+    //якщо нам потрібно дістати інформацію з localstorage
+    let items = localStorage.getItem('title');
+    console.log(items);
+
+    //щоб почистити ЛС
+    localStorage.clear();
+
+    //щоб зберегти ОБ'ЄКТИ в лс / додаємо ч/з JSON.stringify()
+    localStorage.setItem('user', JSON.stringify({id:1, name: 'Art'}));
+
+
+    //якщо нам потрібно внести зміни в об'єкт, який знаходиться в LS
+
+    let userJSON = localStorage.getItem('user');
+    console.log(userJSON);   //дістаємо
+
+    let user = JSON.parse(userJSON);
+    console.log(user);        // перетворюємо з JSON в звичайний об'єкт
+
+    user.age = 31;
+    console.log(user);     //Вносимо зміни в об'єкт, модифікуємо
+
+    localStorage.setItem('user', JSON.stringify(user));
+
+    //з масивами те саме. тільки на етапі модифікації використовуємо users.push({})
+
+</script>
+
+</body>
+</html>
