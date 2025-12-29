@@ -1,0 +1,41 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 20%;
+
+}
+
+#ageValue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    background-color: darkcyan;
+}
+
+#inpOne{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#btnOne{
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+}
+
+#answer{
+    color: mediumvioletred;
+}

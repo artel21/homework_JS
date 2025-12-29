@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin-top: 50px;
+}
+#text{
+    color:wheat;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#b1{
+    color:black;
+    width: 200px;
+    height: 40px;
+    background-color: cadetblue;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#b1:hover{
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+
+}
