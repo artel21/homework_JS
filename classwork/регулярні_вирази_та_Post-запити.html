@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+    <label>
+        userId
+        <input type="text" name="userId">
+    </label>
+
+    <label>
+        title
+        <input type="text" name="title">
+    </label>
+
+    <label>
+        body
+        <input type="text" name="body">
+    </label>
+    <button>save</button>
+
+</form>
+
+<script>
+    let form = document.forms[0];
+    form.onsubmit = function (ev) {
+        ev.preventDefault();
+    let userId = this.userId.value;
+        console.log(userId.match(/\d/g)); // регулярний вираз
+    let title = this.title.value;
+    let body = this.body.value;
+    //console.log(userId, title, body)
+    };
+</script>
+
+</body>
+</html>

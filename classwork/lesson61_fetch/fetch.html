@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+   //fetch - це підтягування інформації з певного джерела.
+        // 1 крок. users - наш endpoint,
+    fetch('https://jsonplaceholder.typicode.com/users')
+        // 2 крок. відповідь сервера опускається в response, а функція json витягує JSON-об'єкти і конверт в JS
+        .then((response) => response.json())
+        // 3 крок. js-об'єкт виводиться туди куди нам треба в межах функції(в consol або створюємо DOM-структуру)
+        // наприклад, за допомогою document.write
+        .then((json) => {
+            for (const {name,username} of json) {
+                document.write(`<div>
+                    ${name} ${username}
+                </div>`)
+            }
+        });
+
+
+    // додавання інформації (add a new product)
+   fetch('https://dummyjson.com/products/add', {
+       method: 'POST',
+       headers: { 'Content-Type': 'application/json' },
+       body: JSON.stringify({
+           title: 'BMW Pencil',
+           /* other product data */
+       })
+   })
+       .then(res => res.json())
+       .then(console.log);
+
+</script>
+
+</body>
+</html>
